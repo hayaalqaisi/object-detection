@@ -1,10 +1,39 @@
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+
+# Django-generated files
 db.sqlite3
 media/
-#object_detection/ml/data/
-#object_detection/ml/cat_dog_model.h5
-.venv/
-.idea
+staticfiles/
+*.log
+
+# Neural-network training data and generated model
+object_detection/ml/data/
+object_detection/ml/cat_dog_model.h5
+
+# Visual Studio
 .vs/
-nn.project1.pyproj
+*.pyproj
+*.sln
+*.slnx
+*.user
+*.suo
+
+# Other editors
+.idea/
+.vscode/
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result — Neural Network Demo</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 640px;
+            margin: 40px auto;
+            padding: 0 16px;
+            color: #1e2749;
+        }
+
+        h1 {
+            color: #2ec4a6;
+        }
+
+        .card {
+            border: 1px solid #e2e6ee;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        img.preview {
+            max-width: 100%;
+            max-height: 320px;
+            border-radius: 8px;
+        }
+
+        .label {
+            font-size: 34px;
+            font-weight: bold;
+            margin: 16px 0 4px;
+        }
+
+        .conf {
+            color: #6b7280;
+        }
+
+        a {
+            color: #2ec4a6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+
+        td, th {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>The network says&hellip;</h1>
+
+    <div class="card">
+        <img class="preview" src="{{ prediction.image.url }}" alt="uploaded image">
+        <div class="label">{{ prediction.label }}</div>
+        <!-- confidence is the number that came out of the OUTPUT NEURON -->
+        <div class="conf">Confidence: {{ prediction.confidence_percent }}%</div>
+    </div>
+
+    <p><a href="{% url 'upload' %}">&larr; Try another image</a></p>
+
+    <h3>Recent predictions</h3>
+    <table>
+        <tr><th>Label</th><th>Confidence</th><th>When</th></tr>
+        {% for p in history %}
+        <tr>
+            <td>{{ p.label }}</td>
+            <td>{{ p.confidence_percent }}%</td>
+            <td>{{ p.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
