@@ -1,0 +1,41 @@
+model,image,actual_label,predicted_label,confidence,time_seconds,correct
+mobilenetv2,download (1).jpeg,Cat,Cat,99.92,6.4059,True
+mobilenetv2,download (2).jpeg,Cat,Cat,99.9,0.0977,True
+mobilenetv2,download (3).jpeg,Cat,Cat,99.97,0.0853,True
+mobilenetv2,download (4).jpeg,Cat,Cat,99.98,0.0866,True
+mobilenetv2,download (5).jpeg,Cat,Cat,99.86,0.1002,True
+mobilenetv2,download.jpeg,Cat,Cat,99.93,0.0694,True
+mobilenetv2,images (1).jpeg,Cat,Cat,99.85,0.0844,True
+mobilenetv2,images (2).jpeg,Cat,Cat,99.9,0.0867,True
+mobilenetv2,images (3).jpeg,Cat,Cat,99.88,0.0861,True
+mobilenetv2,images.jpeg,Cat,Cat,97.99,0.0974,True
+mobilenetv2,images (10).jpeg,Dog,Dog,99.98,0.1234,True
+mobilenetv2,images (11).jpeg,Dog,Dog,99.99,0.0948,True
+mobilenetv2,images (12).jpeg,Dog,Dog,99.99,0.0906,True
+mobilenetv2,images (13).jpeg,Dog,Dog,99.96,0.0844,True
+mobilenetv2,images (4).jpeg,Dog,Dog,99.97,0.0779,True
+mobilenetv2,images (5).jpeg,Dog,Dog,99.96,0.0809,True
+mobilenetv2,images (6).jpeg,Dog,Dog,99.92,0.0843,True
+mobilenetv2,images (7).jpeg,Dog,Dog,99.95,0.0772,True
+mobilenetv2,images (8).jpeg,Dog,Dog,99.97,0.0802,True
+mobilenetv2,images (9).jpeg,Dog,Dog,100.0,0.0892,True
+efficientnetb0,download (1).jpeg,Cat,Cat,99.79,2.1086,True
+efficientnetb0,download (2).jpeg,Cat,Cat,99.6,0.0777,True
+efficientnetb0,download (3).jpeg,Cat,Cat,99.63,0.081,True
+efficientnetb0,download (4).jpeg,Cat,Cat,99.95,0.084,True
+efficientnetb0,download (5).jpeg,Cat,Cat,99.91,0.0749,True
+efficientnetb0,download.jpeg,Cat,Cat,99.84,0.0796,True
+efficientnetb0,images (1).jpeg,Cat,Cat,99.59,0.0815,True
+efficientnetb0,images (2).jpeg,Cat,Cat,99.8,0.084,True
+efficientnetb0,images (3).jpeg,Cat,Cat,99.74,0.0711,True
+efficientnetb0,images.jpeg,Cat,Cat,96.11,0.0716,True
+efficientnetb0,images (10).jpeg,Dog,Dog,99.98,0.0762,True
+efficientnetb0,images (11).jpeg,Dog,Dog,100.0,0.0771,True
+efficientnetb0,images (12).jpeg,Dog,Dog,100.0,0.0762,True
+efficientnetb0,images (13).jpeg,Dog,Dog,99.94,0.0805,True
+efficientnetb0,images (4).jpeg,Dog,Dog,99.78,0.0722,True
+efficientnetb0,images (5).jpeg,Dog,Dog,99.87,0.0775,True
+efficientnetb0,images (6).jpeg,Dog,Dog,99.97,0.0761,True
+efficientnetb0,images (7).jpeg,Dog,Dog,99.95,0.0719,True
+efficientnetb0,images (8).jpeg,Dog,Dog,99.97,0.0705,True
+efficientnetb0,images (9).jpeg,Dog,Dog,100.0,0.0745,True
