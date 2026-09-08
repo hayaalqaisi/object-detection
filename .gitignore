@@ -21,6 +21,9 @@ staticfiles/
 object_detection/ml/data/
 object_detection/ml/cat_dog_model.h5
 
+# Local evaluation images
+evaluation_data/
+
 # Visual Studio
 .vs/
 *.pyproj
