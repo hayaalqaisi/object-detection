@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat or Dog? — Neural Network Demo</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 640px;
+            margin: 40px auto;
+            padding: 0 16px;
+            color: #1e2749;
+        }
+
+        h1 {
+            color: #2ec4a6;
+        }
+
+        .card {
+            border: 1px solid #e2e6ee;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        input[type=file] {
+            margin: 16px 0;
+            display: block;
+        }
+
+        button {
+            background: #1e2749;
+            color: #fff;
+            border: 0;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .hint {
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cat or Dog?</h1>
+    <p class="hint">
+        Upload a photo. The neural network runs a <b>forward pass</b>
+        (input &rarr; hidden layers &rarr; output) and tells you what it sees.
+    </p>
+
+    <div class="card">
+        <!-- enctype="multipart/form-data" is required to send a file -->
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}  {# security token Django requires on every form #}
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Classify image</button>
+        </form>
+    </div>
+</body>
+</html>

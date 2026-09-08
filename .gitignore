@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+db.sqlite3
+media/
+object_detection/ml/data/
+object_detection/ml/cat_dog_model.h5
+.venv/
+.idea
